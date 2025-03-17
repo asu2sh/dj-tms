@@ -13,6 +13,6 @@ urlpatterns = [
 ]
 
 router = DefaultRouter()
-router.register(r'tasks', TaskViewSet)
+router.register(r'tasks', TaskViewSet, basename="tasks")
 
 urlpatterns += router.urls
